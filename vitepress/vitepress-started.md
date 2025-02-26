@@ -58,6 +58,8 @@ bun vitepress init
 ```json [package.json]
 {
   ...
+  // 注意必填，否则打包会报错
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",

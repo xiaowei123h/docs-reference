@@ -65,6 +65,10 @@ export default defineConfig({
             text: '稀土掘金',
             link: 'https://juejin.cn/user/3639844967033508'
           },
+          {
+            text: '文本转md',
+            link: 'https://stackedit.io/app#'
+          },
         ]
       }
     ],
@@ -79,7 +83,7 @@ export default defineConfig({
       },
       {
         text: 'VitePress',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '使用', link: '/vitepress/vitepress-started' },
           { text: 'Markdown扩展', link: '/vitepress/markdown' }
@@ -90,7 +94,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'GitHub生成Token', link: '/git-github/get-token' },
-          // { text: 'Markdown扩展', link: '/vitepress/markdown' }
+          { text: 'GitHub分支保护', link: '/git-github/branches' },
         ]
       },
       {
@@ -115,6 +119,7 @@ export default defineConfig({
         text: 'CSS样式',
         collapsed: true,
         items: [
+          { text: '细节', link: '/css/css-details' },
           { text: 'UnoCSS', link: '/css/unocss' },
         ]
       },
@@ -132,6 +137,17 @@ export default defineConfig({
         items: [
           { text: '水印', link: '/plugin/plugin-watermark' },
           { text: '条形码', link: '/plugin/plugin-barcode' },
+          { text: 'AntV G6', link: '/plugin/plugin-antv' },
+          { text: 'Echarts', link: '/plugin/plugin-echarts' },
+          { text: 'VChart', link: '/plugin/plugin-vchart' },
+          { text: 'MD编辑器', link: '/plugin/plugin-markdown' },
+          { text: '富文本编辑器', link: '/plugin/plugin-editor' },
+          { text: 'Excel导出', link: '/plugin/plugin-excel' },
+          { text: 'dhtmlx甘特图', link: '/plugin/plugin-dhtmlx' },
+          { text: 'vtable甘特图', link: '/plugin/plugin-vtable' },
+          { text: '地图', link: '/plugin/plugin-map' },
+          { text: '打字机', link: '/plugin/plugin-typeit' },
+          { text: 'pdf在线预览', link: '/plugin/plugin-pdf' },
         ]
       },
       {
@@ -153,6 +169,20 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '细节', link: '/request/request-details' },
+        ]
+      },
+      {
+        text: 'VScode',
+        collapsed: true,
+        items: [
+          { text: '细节', link: '/vscode/vscode-details' },
+        ]
+      },
+      {
+        text: '面试题',
+        collapsed: true,
+        items: [
+          { text: '内容', link: '/interview/interview-content' },
         ]
       },
     ],

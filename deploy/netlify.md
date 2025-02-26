@@ -23,6 +23,23 @@ export default defineConfig(({mode}) => {
 })
 ```
 
+部署后非首页路由刷新会报错找不到页面，原因：如果你的网站是一个单页应用（例如使用 Vue、React 等框架），Netlify 默认不会处理客户端路由（即非首页的路由）。当用户直接访问非首页路由时，Netlify 会尝试在服务器上查找对应的文件，但找不到，因此返回 404。
+
+解决办法，在根目录新建文件netlify.toml
+
+```[netlify.toml]
+[build]
+  publish = "dist"  # 替换为你的构建输出目录
+  functions = "functions"  # 如果有 Netlify Functions，指定目录
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+即可解决非首页路由刷新404问题（如果vitepress和vue项目在同一个文件夹下，分开部署vitepress会受到影响，建议分库存放）
+
 **其他动态网站托管**
 
 Render：支持Node.js、Python、Ruby等，免费版含数据库。适用于小型动态网站（如Express、Django）。

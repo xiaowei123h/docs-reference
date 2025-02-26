@@ -34,3 +34,15 @@ import zhCn from "element-plus/es/locale/lang/zh-cn"
   <router-view></router-view>
 </el-config-provider>
 ```
+
+## el-card修改.el-card__body样式
+
+设置el-card的高度后，子元素无法继承el-card的高度，因为中间还有一层样式为.el-card__body的div
+
+修改.el-card__body样式方法
+
+```[.css]
+:deep(.el-card__body) {
+  height:100%
+}
+```
