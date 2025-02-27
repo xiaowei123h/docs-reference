@@ -179,7 +179,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '面试题',
+        text: '知识点',
         collapsed: true,
         items: [
           { text: '内容', link: '/interview/interview-content' },
