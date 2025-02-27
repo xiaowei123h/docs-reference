@@ -182,7 +182,9 @@ export default defineConfig({
         text: '知识点',
         collapsed: true,
         items: [
-          { text: '内容', link: '/interview/interview-content' },
+          { text: 'vue3', link: '/interview/interview-content' },
+          { text: '内容2', link: '/interview/interview-content2' },
+          { text: '内容3', link: '/interview/interview-content3' },
         ]
       },
     ],
